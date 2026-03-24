@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eggs 101 | Making Breakfast Eggceptional</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #FFFFFF;
+            --card-bg: #F5F5F5;
+            --primary-yellow: #FFD700;
+            --accent-yellow: #FFC107;
+            --text-dark: #333333;
+            --joke-bg: #FFF3CD;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Fredoka', sans-serif;
+            color: var(--text-dark);
+        }
+
+        /* Navbar with sticking-out logo */
+        header {
+            background-color: var(--bg-color);
+            border-bottom: 2px solid var(--card-bg);
+            padding: 1rem 0;
+            position: relative;
+            margin-bottom: 60px;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav {
+            display: flex;
+            width: 100%;
+            max-width: 800px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .nav-link:hover {
+            background-color: var(--primary-yellow);
+        }
+
+        .logo-container {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 10px;
+            z-index: 10;
+        }
+
+        .logo-container img {
+            width: 90px;
+            height: 90px;
+            background: white;
+            padding: 5px;
+            border: 2px dashed #666;
+            border-radius: 50%;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Standardized image sizes from style guide */
+        .hero-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+
+        .section-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .joke-banner {
+            border: 2px dashed var(--accent-yellow);
+            background-color: var(--joke-bg);
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+            font-style: italic;
+            border-radius: 10px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            background-color: var(--primary-yellow);
+            color: var(--text-dark);
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-family: 'Fredoka', sans-serif;
+            transition: 0.3s;
+            box-sizing: border-box;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-yellow);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.8rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Eggs 101 Logo">
+            </a>
+        </div>
+        <nav>
+            <a href="about.html" class="nav-link">All About Eggs</a>
+            <div style="width: 100px;"></div> <a href="types.html" class="nav-link">Ways to Cook</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <h1>Eggs 101</h1>
+            <p>Making breakfast eggceptional, one egg at a time.</p>
+            <img src="images/egg-omelet.jpg" alt="Featured Omelet" class="hero-img">
+            <p>Welcome to Eggs 101, your guide to mastering the art of the egg. Whether you're a student or a home chef, we've got you covered.</p>
+        </section>
+
+        <div class="joke-banner">
+            "What do you call a mischievous egg? A practical yolker."
+        </div>
+
+        <section class="card">
+            <h2>All About Eggs</h2>
+            <img src="images/egg-varieties.jpg" alt="Egg Varieties" class="section-img">
+            <p>From grocery store staples to fancy free-range, learn everything you need to know about what's inside the shell.</p>
+            <a href="about.html" class="btn">Learn More</a>
+        </section>
+
+        <div class="joke-banner">
+            "What do you call a self-obsessed egg? An egg-o-maniac."
+        </div>
+
+        <section class="card">
+            <h2>Ways to Cook Eggs</h2>
+            <img src="images/egg-scrambled.jpg" alt="Scrambled Eggs" class="section-img">
+            <p>Our guide breaks down every method step-by-step. It's time to level up your kitchen game.</p>
+            <a href="types.html" class="btn">Start Cooking</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Matthew | WDD 130 | 2026</p>
+    </footer>
+
+</body>
+</html>
